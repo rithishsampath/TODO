@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ToDo✍️📌</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>ToDo📝</h1>
+    </nav>
+
+    <div class="container">
+        <div class="list-container">
+            <h2>Title</h2>
+            <h5>subtitle</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi hic officia autem nemo sed eligendi sit
+                nisi porro facere eius!</p>
+            <button onclick="deletebook(event)">Remove</button>
+        </div>
+    </div>
+
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add List</h2>
+        <form>
+            <input type="text" placeholder="Title" id="book-title">
+            <input type="text" placeholder="SubTitle" id="book-subtitle">
+            <textarea placeholder="Short notes" id="book-list"></textarea>
+            <button id="add-book">Create</button>
+            <button id="cancel-book">Cancel</button>
+        </form>
+    </div>
+
+
+    <button class="add-button" id="add-popup">+</button>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
